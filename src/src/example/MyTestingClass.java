@@ -48,7 +48,18 @@ public class MyTestingClass {
             table.put(id, obj);
         }
 
-        System.out.println(table.get(1));
+
+
+        BST<Integer, String> tree = new BST<>();
+        tree.put(1, "audi");
+        tree.put(45, "CLS");
+        tree.put(9, "BMW");
+        tree.put(5, "supra");
+        tree.put(17, "sorento");
+
+        for (BST.Node node : tree) {
+            System.out.println("key: " + node.getKey() + " value: " + node.getValue());
+        }
 
 
 
